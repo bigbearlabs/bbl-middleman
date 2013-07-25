@@ -441,8 +441,17 @@ module.exports = obj =
         msg: "error while serving evernote request"
         error: e
         trace: e.stack
-    .done()
 
+      switch e.type
+        when 'authentication'
+          res.redirect '/authentication'
+
+        else
+          obj.sendError res, e
+
+          
+        
+    .done()
 
   initEdamUser: (req) ->
     deferred = Q.defer()
@@ -452,10 +461,19 @@ module.exports = obj =
 
       username = req.headers['x-username']
       username ||= req.query.username
-      store.getCredentials( 'evernote', username)
+
+      Q.fcall ->
+        store.getCredentials( 'evernote', username)
       .then (credentialsSet)->
         credentials = _.sortBy( credentialsSet, (e) -> e.updatedAt ).reverse()[0]
-        data = credentials.get 'credentials'
+        
+        if credentials
+          data = credentials.get 'credentials'
+        else
+          # raise error for client to handle and redirect to login.
+          deferred.reject 
+            type: 'authentication'
+            msg: "no credentials from store."
 
       .then (data)->
         authToken = data.authToken
