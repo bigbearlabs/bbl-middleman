@@ -106,15 +106,30 @@ body {
 }
 
 
-header {
-	text-align: left;
+// left-right split alignment.
+.menu {
+	text-align: justify;
 
+	.page-menu {
+		display: inline-block;
+	}
+}
+.menu::after {
+	content: "";
+	width: 100%;
+	display: inline-block;
+}
+
+.menu {
+	// constrain image sizes
 	img {
 		width: 50px;
 		height: 50px;
 	}
-	p {
-		display: none;  /* HACK hiding the text. */
+
+	// spacing
+	.page-menu a {
+		margin-left: 20px;
 	}
 }
 
@@ -134,6 +149,12 @@ section {
 	margin: 40px auto;
 
 	max-width: 700px;
+
+	.media {
+		width: 80%;
+		// margin-left: 20%;  # disabled until the images arrive.
+		margin: auto;
+	}
 }
 
 .news {
@@ -146,6 +167,7 @@ section {
 	}
 
 }
+
 section.title {
 	.subtitle p {
 		text-align: center;
@@ -153,6 +175,12 @@ section.title {
 }
 
 section.actions {
+	text-align: center;
+
+	> p {
+		display: inline-block;
+	}
+
  .download .title {
 		display: none;
 	}
