@@ -4,6 +4,7 @@
 // foundation has a strange layout break-point that ends up with too much h margin when roughly 820 < x < 950 . work around.
 @media screen and (max-width: #{950px}) {
 	.main {
+		margin-top:100px;
 		max-width: 800px;
 	}
 }
@@ -108,11 +109,19 @@ body {
 
 // left-right split alignment.
 .menu {
-	text-align: justify;
-
-	.page-menu {
+	position:fixed; 
+	background:rgba(0,0,0,0.25);
+	width: 100%; top:0px; left:0px;
+	.home-button {
+		display: inline-block;
+		margin:20px 0 0 10px;
+	}
+	.page-menu {float:right;
+		margin:35px 20px 0 0;
 		display: inline-block;
 	}
+	.page-menu a {color:white;}
+	.page-menu a:hover {color:#FFCC99;}
 }
 .menu::after {
 	content: "";
