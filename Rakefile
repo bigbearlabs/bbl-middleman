@@ -111,7 +111,8 @@ desc 'git tag'
 task :tag	do
 	sh %Q(
 		git tag "#{Time.new.to_s}"
-	)	
+		git push origin
+	)
 end
 
 
