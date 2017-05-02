@@ -19,7 +19,7 @@ GEM
     em-websocket (0.5.0)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.5.3)
-    eventmachine (1.0.3)
+    eventmachine (1.2.3)
     execjs (1.4.0)
       multi_json (~> 1.0)
     favicon_maker (1.1.2)
@@ -40,7 +40,7 @@ GEM
       progress (~> 2.4.0)
     image_size (1.1.5)
     in_threads (1.1.2)
-    json (1.8.1)
+    json (2.1.0)
     kramdown (1.3.2)
     listen (1.3.1)
       rb-fsevent (>= 0.9.3)
@@ -147,3 +147,6 @@ DEPENDENCIES
   rack-rewrite
   rake
   susy (~> 1.0.5)
+
+BUNDLED WITH
+   1.14.3
