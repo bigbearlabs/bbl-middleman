@@ -111,7 +111,8 @@ desc 'git tag'
 task :tag	do
 	sh %Q(
     git tag #{Time.new.utc.to_s.gsub(' ', '_').gsub(':', '_')}
-	)	
+	git push origin
+	)
 end
 
 
