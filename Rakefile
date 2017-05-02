@@ -74,7 +74,7 @@ namespace :deploy do
 		"""
 	end
 	
-	desc "production deployment (Gandi)"
+	desc "previous production deployment (Gandi)"
 	task :'mackerel-site' do
 		cmd = %q(
 			set -e
