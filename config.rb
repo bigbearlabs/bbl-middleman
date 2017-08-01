@@ -31,7 +31,7 @@ redirect 'webbuddy/buy/index.html', to:'https://itunes.apple.com/gb/app/webbuddy
 redirect 'webbuddy/support/index.html', to:'/support'
 
 
-redirect 'onehour/buy/index.html', to:'https://appstore.com/onehour'
+redirect 'onehour/buy/index.html', to:'https://itunes.apple.com/app/onehour-timer-for-focus/id643538078?mt=8'
 
 redirect 'onehour/support/index.html', to:'/support'
 
