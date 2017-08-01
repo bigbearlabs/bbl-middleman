@@ -27,6 +27,8 @@ section.title {
 
 	max-width: 500px;  // ?? can this kind of constraining be done relative to inner elements?
 
+	margin-top: 97px; // clear the sticky header
+
 	.title {
 		display: inline;
 
