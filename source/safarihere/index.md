@@ -37,7 +37,7 @@ If you're a graphic designer, please consider contributing an icon or other grap
 
 SafariHere works well with [WebBuddy][].
 
-Support our efforts to radically improve the web-based research experience -- [Researches][].
+Support our efforts to radically improve the web-based research experience --- [Researches][].
 
 
 

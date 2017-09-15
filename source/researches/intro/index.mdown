@@ -25,8 +25,8 @@ It's the fastest way to a Google search result page.
 Install extensions for your favorite browsers.
 
 - [Google Chrome](/researches/extensions/chrome)
-- Safari -- coming soon
-- Firefox -- coming soon
+- Safari --- coming soon
+- Firefox --- coming soon
 
 The browser extensions send your browsing history to the Researches app for a rich re-search[^1] experience.
 
@@ -35,7 +35,7 @@ The browser extensions send your browsing history to the Researches app for a ri
 
 Visualise your web history and interactively find something you need, or scan through for insights on your research.
 
-History items are organised into stacks based on search term, app, or browser window. Other stack to come -- watch this space.
+History items are organised into stacks based on search term, app, or browser window. Other stack to come --- watch this space.
 
 
 ### [coming soon] Organise using tags.

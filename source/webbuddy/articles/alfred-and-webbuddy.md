@@ -9,7 +9,7 @@ To many people, the address bar (also known as the omnibar) is synonymous with b
 We have too. We've prototyped several address bars, and really, it's not easy to make a good one. [^]
 
 
-One of the things it does really well is to start searching the internet. And it works really well with [WebBuddy]. Just call Alfred, type, then hit Return -- now WebBuddy loads the page.
+One of the things it does really well is to start searching the internet. And it works really well with [WebBuddy]. Just call Alfred, type, then hit Return --- now WebBuddy loads the page.
 
 Once you get comfortable with this fast workflow, free from distractions in your browsers, it can become [pretty addicting].
 
